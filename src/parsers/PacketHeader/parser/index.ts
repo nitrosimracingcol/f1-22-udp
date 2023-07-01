@@ -5,6 +5,7 @@ export class PacketHeaderParser extends F1Parser {
     super();
     this.endianess('little')
       .uint16le('m_packetFormat')
+      .uint8('m_gameYear')
       .uint8('m_gameMajorVersion')
       .uint8('m_gameMinorVersion')
       .uint8('m_packetVersion')
@@ -12,6 +13,7 @@ export class PacketHeaderParser extends F1Parser {
       .uint64le('m_sessionUID')
       .floatle('m_sessionTime')
       .uint32le('m_frameIdentifier')
+      .uint32le('m_overallFrameIdentifier')
       .uint8('m_playerCarIndex')
       .uint8('m_secondaryPlayerCarIndex');
   }

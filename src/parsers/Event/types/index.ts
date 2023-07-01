@@ -91,6 +91,11 @@ export interface Buttons {
   D_Pad_Down?: number;
 }
 
+export interface Overtake {
+  overtakingVehicleIdx: number;
+  beingOvertakenVehicleIdx: number;
+}
+
 /*
   struct PacketEventData
   {
@@ -115,6 +120,7 @@ export interface PacketEventData {
   StopGoPenaltyServed?: StopGoPenaltyServed;
   Flashback?: Flashback;
   Buttons?: Buttons;
+  Overtake?: Overtake;
 }
 
 export interface ButtonFlags {

@@ -19,6 +19,8 @@ export interface CarStatusData {
   /*uint8*/ m_tyresAgeLaps: number;
   /*int8*/ m_vehicleFiaFlags: number;
   /*float*/ m_ersStoreEnergy: number;
+  /*float*/ m_enginePowerICE: number;
+  /*float*/ m_enginePowerMGUK: number;
   /*uint8*/ m_ersDeployMode: number;
   /*float*/ m_ersHarvestedThisLapMGUK: number;
   /*float*/ m_ersHarvestedThisLapMGUH: number;

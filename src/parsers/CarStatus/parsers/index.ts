@@ -22,6 +22,8 @@ export class CarStatusDataParser extends F1Parser {
       /*uint8*/ .uint8('m_visualTyreCompound')
       /*uint8*/ .uint8('m_tyresAgeLaps')
       /*int8*/ .int8('m_vehicleFiaFlags')
+      /*float*/ .floatle('m_enginePowerICE')
+      /*float*/ .floatle('m_enginePowerMGUK')
       /*float*/ .floatle('m_ersStoreEnergy')
       /*uint8*/ .uint8('m_ersDeployMode')
       /*float*/ .floatle('m_ersHarvestedThisLapMGUK')

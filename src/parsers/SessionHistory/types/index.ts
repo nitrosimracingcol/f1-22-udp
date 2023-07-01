@@ -12,8 +12,11 @@ import {PacketHeader} from '../../PacketHeader/types';
 export interface LapHistoryData {
   m_lapTimeInMS: number;
   m_sector1TimeInMS: number;
+  m_sector1TimeMinutes: number;
   m_sector2TimeInMS: number;
+  m_sector2TimeMinutes: number;
   m_sector3TimeInMS: number;
+  m_sector3TimeMinutes: number;
   m_lapValidBitFlags: number;
 }
 

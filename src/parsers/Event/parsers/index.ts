@@ -23,6 +23,8 @@ export const EVENT_CODES: {[index: string]: EventCode} = {
   StopGoServed: 'SGSV',
   Flashback: 'FLBK',
   ButtonStatus: 'BUTN',
+  RedFlag: 'RDFL',
+  Overtake: 'OVTK',
 };
 
 export class FastestLapParser extends F1Parser {
@@ -149,6 +151,15 @@ export class ButtonsParser extends F1Parser {
     // }
   }
 }
+
+export class OvertakeParser extends F1Parser {
+  constructor() {
+    super();
+    this.endianess('little').uint8('overtakingVehicleIdx').uint8('beingOvertakenVehicleIdx');
+  }
+}
+
+
 
 export class PacketEventDataParser extends F1Parser {
   data: PacketEventData;

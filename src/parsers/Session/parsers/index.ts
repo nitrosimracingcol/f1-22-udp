@@ -183,7 +183,15 @@ export class PacketSessionDataParser extends F1Parser {
       //uint32le
       .uint32le('m_timeOfDay')
       //uint8
-      .uint8('m_sessionLength');
+      .uint8('m_sessionLength')
+            
+      .uint8('m_speedUnitsLeadPlayer')
+      .uint8('m_temperatureUnitsLeadPlayer')
+      .uint8('m_speedUnitsSecondaryPlayer')
+      .uint8('im_temperatureUnitsSecondaryPlayer')
+      .uint8('mm_numSafetyCarPeriods')
+      .uint8('mm_numVirtualSafetyCarPeriods')
+      .uint8('mm_numRedFlagPeriods');
 
     this.data = this.fromBuffer(buffer) as PacketSessionData;
     this.data.m_header.m_sessionUID = this.data.m_header.m_sessionUID.toString();

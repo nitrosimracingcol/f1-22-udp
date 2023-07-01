@@ -4,7 +4,7 @@ import {F1Parser} from '../../f1.parser';
 export class LobbyInfoDataParser extends F1Parser {
   constructor() {
     super();
-    this.uint8('m_aiControlled').uint8('m_teamId').uint8('m_nationality').string('m_name', {length: 48, stripNull: true}).uint8('m_carNumber').uint8('m_readyStatus');
+    this.uint8('m_aiControlled').uint8('m_teamId').uint8('m_nationality').uint8('m_platform').string('m_name', {length: 48, stripNull: true}).uint8('m_carNumber').uint8('m_readyStatus');
   }
 }
 

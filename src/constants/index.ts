@@ -15,16 +15,16 @@ export enum packetID {
 }
 
 export enum packetSize {
-  Motion = 1464,
-  Session = 632,
-  LapData = 972,
-  Event = 40,
-  Participants = 1257,
-  CarSetups = 1102,
-  CarTelemetry = 1347,
-  CarStatus = 1058,
-  FinalClassification = 1015,
-  LobbyInfo = 1191,
-  CarDamage = 948,
-  SessionHistory = 1155,
+  Motion = 1349,
+  Session = 644,
+  LapData = 1131,
+  Event = 45,
+  Participants = 1306,
+  CarSetups = 1107,
+  CarTelemetry = 1352,
+  CarStatus = 1239,
+  FinalClassification = 1020,
+  LobbyInfo = 1218,
+  CarDamage = 953,
+  SessionHistory = 1460,
 }

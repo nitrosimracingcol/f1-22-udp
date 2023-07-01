@@ -59,4 +59,13 @@ export interface PacketSessionData {
   m_ruleSet: number;
   m_timeOfDay: number;
   m_sessionLength: number;
+  m_speedUnitsLeadPlayer: number;
+  m_temperatureUnitsLeadPlayer: number;
+  m_speedUnitsSecondaryPlayer: number;
+  m_temperatureUnitsSecondaryPlayer: number;
+  m_numSafetyCarPeriods: number;
+  m_numVirtualSafetyCarPeriods: number;
+  m_numRedFlagPeriods: number;
+
+
 }

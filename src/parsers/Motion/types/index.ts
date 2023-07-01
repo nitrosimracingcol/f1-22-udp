@@ -24,7 +24,7 @@ interface CarMotionData {
 export interface PacketMotionData {
   m_header: PacketHeader; // Header
   m_carMotionData: CarMotionData[]; // Data for all cars on track
-
+/*
   // Extra player car ONLY data
   m_suspensionPosition: number[]; // Note: All wheel arrays have the following order:
   m_suspensionVelocity: number[]; // RL, RR, FL, FR
@@ -41,4 +41,6 @@ export interface PacketMotionData {
   m_angularAccelerationY: number; // Angular velocity y-component
   m_angularAccelerationZ: number; // Angular velocity z-component
   m_frontWheelsAngle: number; // Current front wheels angle in radians
+
+  */
 }

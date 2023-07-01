@@ -22,7 +22,11 @@ class ParticipantParser extends F1Parser {
       // string
       .string('m_name', {length: 48, stripNull: true})
       // uint8
-      .uint8('m_yourTelemetry');
+      .uint8('m_yourTelemetry')
+      // uint8
+      .uint8('m_showOnlineNames')
+      // uint8
+      .uint8('m_platform');
   }
 }
 

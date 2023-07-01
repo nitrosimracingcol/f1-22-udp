@@ -4,6 +4,7 @@ export interface LobbyInfoData {
   m_aiController: number;
   m_teamId: number;
   m_nationality: number;
+  m_platform: number;
   m_name: string;
   m_carNumber: number;
   m_readyStatus: number;

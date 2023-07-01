@@ -33,6 +33,7 @@ export class PacketMotionDataParser extends F1Parser {
     super();
     this.nest('m_header', {type: new PacketHeaderParser()})
       .array('m_carMotionData', {type: new CarMotionDataParser(), length: 20})
+      /*
       .array('m_suspensionPosition', {type: 'floatle', length: 4})
       .array('m_suspensionVelocity', {type: 'floatle', length: 4})
       .array('m_suspensionAcceleration', {type: 'floatle', length: 4})
@@ -47,7 +48,8 @@ export class PacketMotionDataParser extends F1Parser {
       .floatle('m_angularAccelerationX')
       .floatle('m_angularAccelerationY')
       .floatle('m_angularAccelerationZ')
-      .floatle('m_frontWheelsAngle');
+      .floatle('m_frontWheelsAngle')
+      */;
 
     this.data = this.fromBuffer(msg) as PacketMotionData;
     this.data.m_header.m_sessionUID = this.data.m_header.m_sessionUID.toString();

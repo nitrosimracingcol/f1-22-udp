@@ -10,6 +10,8 @@ interface ParticipantData {
   /*uint8*/ m_nationality: number;
   /*char[48]*/ m_name: String;
   /*uint8*/ m_yourTelemetry: number;
+  /*uint8*/ m_showOnlineNames: number;
+  /*uint8*/ m_platform: number;
 }
 
 export interface PacketParticipantsData {
